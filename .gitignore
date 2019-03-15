@@ -1,0 +1,13 @@
+build
+target/
+work/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings
+.bak
+.idea/
+dependency-reduced-pom.xml
+.factorypath/

@@ -1,0 +1,12 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+    <f:entry title="${%Cantata project directory}" field="cantataExecDir">
+        <f:textbox default="Cantata/tests"/>
+    </f:entry>
+
+    <f:entry title="${%Build arguments}" field="arguments">
+        <f:textbox/>
+    </f:entry>
+
+</j:jelly>

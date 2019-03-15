@@ -7,8 +7,8 @@ Can be used from Jenkinsfile as well as from freestyle job.
 ### Pipeline syntax
 
 ```groovy
-cantataWrapper(lservrc, lsforsehost, cantataPath) {
-    cantataRunTest('path/to/makefile', 'MY-ARGUMENT1,MY-ARGUMEN2')
+cantataWrapper(lservrc, lsforcehost, cantataPath) {
+    cantataRunTest('path/to/makefile', 'MY-ARGUMENT1,MY-ARGUMENT2')
 }
 ```
 

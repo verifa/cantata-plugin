@@ -16,7 +16,7 @@
         </f:entry>
 
         <f:entry title="${%Cantata server URL}" field="globalCantataServer">
-            <f:textbox default="localhost:8080"/>
+            <f:textbox default="http://localhost:8085"/>
         </f:entry>
 
     </f:section>

@@ -10,4 +10,4 @@ work/
 .bak
 .idea/
 dependency-reduced-pom.xml
-.factorypath/
+.factorypath

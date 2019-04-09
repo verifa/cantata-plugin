@@ -15,5 +15,9 @@
             <f:textbox default="C:\qa_systems\cantata\bin"/>
         </f:entry>
 
+        <f:entry title="${%Cantata server URL}" field="globalCantataServer">
+            <f:textbox default="localhost:8080"/>
+        </f:entry>
+
     </f:section>
 </j:jelly>

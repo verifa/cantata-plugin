@@ -4,15 +4,15 @@
     <f:section title="${%Cantata}">
 
         <f:entry title="${%Cantata license file path, LSERVRC}" field="globalLservrc">
-            <f:textbox/>
+            <f:textbox default="$LSERVRC"/>
         </f:entry>
 
         <f:entry title="${%LSFORCEHOST Environment Variable}" field="globalLsforcehost">
-            <f:textbox/>
+            <f:textbox default="$LSFORCEHOST"/>
         </f:entry>
 
         <f:entry title="${%Cantata executables path}" field="globalCantataPath">
-            <f:textbox/>
+            <f:textbox default="C:\qa_systems\cantata\bin"/>
         </f:entry>
 
     </f:section>

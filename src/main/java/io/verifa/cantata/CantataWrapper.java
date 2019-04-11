@@ -33,6 +33,7 @@ public class CantataWrapper extends SimpleBuildWrapper {
     private String lservrc;
     private String lsforcehost;
     private String cantataPath;
+    private String cantataServer;
 
     @DataBoundConstructor
     public CantataWrapper() {
@@ -53,9 +54,15 @@ public class CantataWrapper extends SimpleBuildWrapper {
         this.cantataPath = cantataPath;
     }
 
+    @DataBoundSetter
+    public void setCantataServer(String cantataServer) {
+        this.cantataServer = cantataServer;
+    }
+
     public String getLservrc() { return lservrc; }
     public String getLsforcehost() { return lsforcehost; }
     public String getCantataPath() { return cantataPath; }
+    public String getCantataServer() { return cantataServer; }
 
     @Override
     public void setUp(Context context, Run<?, ?> build, FilePath workspace, Launcher launcher, TaskListener listener,
@@ -97,16 +104,19 @@ public class CantataWrapper extends SimpleBuildWrapper {
         private String globalLservrc;
         private String globalLsforcehost;
         private String globalCantataPath;
+        private String globalCantataServer;
 
         public String getGlobalLservrc() { return globalLservrc; }
         public String getGlobalLsforcehost() { return globalLsforcehost; }
         public String getGlobalCantataPath() { return globalCantataPath; }
+        public String getGlobalCantataServer() { return globalCantataServer; }
 
         @Override
         public boolean configure(StaplerRequest req, JSONObject formData) throws FormException {
             globalLservrc = formData.getString("globalLservrc");
             globalLsforcehost = formData.getString("globalLsforcehost");
             globalCantataPath = formData.getString("globalCantataPath");
+            globalCantataServer = formData.getString("globalCantataServer");
             save();
             return super.configure(req,formData);
         }

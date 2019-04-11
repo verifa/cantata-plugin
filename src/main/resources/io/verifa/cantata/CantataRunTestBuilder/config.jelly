@@ -5,8 +5,27 @@
         <f:textbox default="Cantata/tests"/>
     </f:entry>
 
-    <f:entry title="${%Build arguments}" field="arguments">
-        <f:textbox/>
+    <f:entry title="${%EXECUTE=1}" field="execute">
+        <f:checkbox default="true"/>
     </f:entry>
+
+    <f:entry title="${%PUSH_TO_SERVER=1}" field="pushToServer">
+        <f:checkbox default="false"/>
+    </f:entry>
+
+    <f:entry title="${%APPEND_TO_TOP_LEVEL_LOG=1}" field="appendToTopLevelLog">
+        <f:checkbox default="false"/>
+    </f:entry>
+
+    <f:entry title="${%OUTPUT_TO_CONSOLE=1}" field="outputToConsole">
+        <f:checkbox default="false"/>
+    </f:entry>
+
+    <f:advanced>
+        <f:entry title="Additional build arguments (comma separated list and no whitespaces)" field="arguments">
+            <f:textbox default=""/>
+        </f:entry>
+    </f:advanced>
+
 
 </j:jelly>

@@ -11,3 +11,4 @@ work/
 .idea/
 dependency-reduced-pom.xml
 .factorypath
+*.versionsBackup

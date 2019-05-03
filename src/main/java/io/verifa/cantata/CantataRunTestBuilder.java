@@ -18,6 +18,7 @@ import hudson.util.ArgumentListBuilder;
 import io.verifa.cantata.utils.CantataUtils;
 import jenkins.tasks.SimpleBuildStep;
 import net.sf.json.JSONObject;
+import org.apache.commons.lang3.StringUtils;
 import org.jenkinsci.Symbol;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.DataBoundSetter;
@@ -101,7 +102,7 @@ public class CantataRunTestBuilder extends Builder implements SimpleBuildStep {
         args.add(CantataConstants.MAKE);
         args.add(CantataConstants.ALL);
         String[] items;
-        if (argsString != null) {
+        if (!StringUtils.isEmpty(argsString)) {
             items = argsString.split("\\s*,\\s*");
             for (String item : items) {
                 args.add(item);

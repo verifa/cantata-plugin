@@ -1,0 +1,6 @@
+dist: xenial
+language: java
+jdk: openjdk8
+sudo: false # faster builds
+
+script: "mvn install -DskipTests -Dfindbugs.skip=true -Denforcer.skip=true"

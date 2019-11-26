@@ -65,8 +65,8 @@ public class CantataWrapper extends SimpleBuildWrapper {
     public String getCantataServer() { return cantataServer; }
 
     @Override
-    public void setUp(Context context, Run<?, ?> build, FilePath workspace, Launcher launcher, TaskListener listener,
-                      EnvVars initialEnvironment) throws IOException, InterruptedException {
+    public void setUp(Context context, Run<?, ?> build, FilePath workspace, Launcher launcher,
+                      TaskListener listener, EnvVars initialEnvironment) throws IOException, InterruptedException {
 
         final CantataLogger logger = new CantataLogger("BuildWrapper", listener.getLogger());
         logger.logMessage("Setting up environment for Cantata ...");

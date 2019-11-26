@@ -4,7 +4,7 @@ Cantata plugin for Jenkins.
 
 Can be used from Jenkinsfile as well as from freestyle job.
 
-### Pipeline syntax
+## Pipeline syntax
 
 ```groovy
 cantataWrapper(lservrc, lsforcehost, cantataPath) {
@@ -19,15 +19,15 @@ Prequisites:
 - JDK 8
 - Maven
 
-Build with `mvn install -DskipTests -Dfindbugs.skip=true -Denforcer.skip=true` (skipping tests and findbugx/enforcer).
+Build with `mvn install`.
 
-Debug locally with `mvn hpi:run -DskipTests -Dfindbugs.skip=true -Denforcer.skip=true`.
+Debug locally with `mvn hpi:run`.
 
 ### How to deploy to Jenkins
 
-Package with `mvn package -DskipTests -Dfindbugs.skip=true -Denforcer.skip=true` and then (`target/cantata-plugin.hpi`) 
-file is created and that file can bve imported to Jenkins from Manage Jenkins -> Manage Plugins -> Advanced 
--> Upload Plugin.
+Package with `mvn package` and then (`target/cantata-plugin.hpi`).
+
+file is created and that file can bve imported to Jenkins from Manage Jenkins -> Manage Plugins -> Advanced -> Upload Plugin.
 
 ### License
 

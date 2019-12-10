@@ -4,11 +4,11 @@ Cantata plugin for Jenkins.
 
 Can be used from Jenkinsfile as well as from freestyle job.
 
-## Pipeline syntax
+## Example pipeline syntax
 
 ```groovy
-cantataWrapper(lservrc, lsforcehost, cantataPath) {
-    cantataRunTest('path/to/makefile', 'MY-ARGUMENT1,MY-ARGUMENT2')
+cantataWrapper() {
+    cantataRunTest customArguments: 'APPEND_TO_TOP_LEVEL_LOG=1,EXECUTE=1,OUTPUT_TO_CONSOLE=1', cantataExecDir: 'Cantata/tests'
 }
 ```
 

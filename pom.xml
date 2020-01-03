@@ -4,11 +4,11 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>3.4</version>
+        <version>3.55</version>
         <relativePath />
     </parent>
     <groupId>io.jenkins.plugins</groupId>
-    <artifactId>cantata-plugin</artifactId>
+    <artifactId>cantata</artifactId>
     <version>0.1.1</version>
     <packaging>hpi</packaging>
 

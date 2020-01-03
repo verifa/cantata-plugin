@@ -25,11 +25,13 @@ Debug locally with `mvn hpi:run`.
 
 ### How to deploy to Jenkins
 
-Package with `mvn package` and then `target/cantata-plugin.hpi`-file is created and that file can bve imported to Jenkins from Manage Jenkins -> Manage Plugins -> Advanced -> Upload Plugin.
+Package with `mvn package` and then `target/cantata-plugin.hpi`-file is created and that file can be imported to Jenkins from:
+
+> Manage Jenkins -> Manage Plugins -> Advanced -> Upload Plugin.
 
 ### License
 
-Copyright (C) Verifa Oy, 2019.
+Copyright &copy; Verifa Oy, 2019-2020.
 
 See the [LICENSE](./LICENSE) file in the root of this project for license details.
 

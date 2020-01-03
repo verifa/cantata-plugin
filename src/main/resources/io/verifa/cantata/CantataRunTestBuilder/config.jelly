@@ -22,7 +22,7 @@
     </f:entry>
 
     <f:advanced>
-        <f:entry title="Additional build arguments (comma separated list and no whitespaces)" field="arguments">
+        <f:entry title="Additional build arguments (comma separated list and no whitespaces)" field="customArguments">
             <f:textbox default=""/>
         </f:entry>
     </f:advanced>
